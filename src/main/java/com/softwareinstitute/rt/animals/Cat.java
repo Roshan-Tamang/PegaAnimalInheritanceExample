@@ -23,6 +23,11 @@ public class Cat extends Mammal{
     }
 
     @Override
+    public void move() {
+
+    }
+
+    @Override
     public String communicate() {
         String catNoise = "Meow";
 

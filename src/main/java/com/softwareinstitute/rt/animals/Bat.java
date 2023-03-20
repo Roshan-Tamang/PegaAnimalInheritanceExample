@@ -24,6 +24,11 @@ public class Bat extends Mammal implements Flying {
     }
 
     @Override
+    public void move() {
+
+    }
+
+    @Override
     public String communicate() {
         String batNoise = "Chirp";
 

@@ -13,7 +13,7 @@ List<Animal> animalList = new ArrayList<>();
 
     public static void main(String[] args) {
 
-        createZoo();
+       // createZoo();
 
 
         System.out.println("Check animals in the zoo");
