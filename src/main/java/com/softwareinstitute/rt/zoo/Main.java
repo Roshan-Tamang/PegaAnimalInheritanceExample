@@ -19,39 +19,41 @@ public class Main {
         checkAnimals();
 
 
-        Cat a = new Cat("A");
-        a.eat("Cat food");
-
-        System.out.println(a.getLastFoodEaten());
-
-
     }
 
     private static void createZoo() {
 
-        Cat cat = new Cat("Tabby");
-        Cat cat1 = new Cat("Ginger");
+        Cat tabby = new Cat();
+        tabby.setName("Tabby");
+        Cat whiskers = new Cat();
+        whiskers.setName("Whiskers");
 
-        animalList.add(cat);
-        animalList.add(cat1);
+        animalList.add(tabby);
+        animalList.add(whiskers);
 
-        Bat bat = new Bat("Fly");
-        Bat bat1 = new Bat("Batman");
+        Bat alvin = new Bat();
+        alvin.setName("Alvin");
+        Bat ricky = new Bat();
+        ricky.setName("Ricky");
 
-        animalList.add(bat);
-        animalList.add(bat1);
+        animalList.add(alvin);
+        animalList.add(ricky);
 
-        Crow crow = new Crow("Caw");
-        Crow crow1 = new Crow("CawCaw");
+        Crow richie = new Crow();
+        richie.setName("Richie");
+        Crow sam = new Crow();
+        sam.setName("Sam");
 
-        animalList.add(crow);
-        animalList.add(crow1);
+        animalList.add(richie);
+        animalList.add(sam);
 
-        Penguin penguin = new Penguin("Pengu");
-        Penguin penguin1 = new Penguin("Pingu");
+        Penguin john = new Penguin();
+        john.setName("John");
+        Penguin karl = new Penguin();
+        karl.setName("Karl");
 
-        animalList.add(penguin);
-        animalList.add(penguin1);
+        animalList.add(john);
+        animalList.add(karl);
 
     }
 
@@ -60,7 +62,7 @@ public class Main {
         System.out.println("The zoo contains:");
         for (Animal i:
              animalList) {
-            System.out.println(i.getName() + i.getClass());
+            System.out.println(i.getClass().toString().substring(39) + " " + i.toString());
         }
 
 

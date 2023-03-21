@@ -5,14 +5,12 @@ import com.softwareinstitute.rt.interfaces.Flying;
 public class Crow extends Bird implements Flying {
 
 
-    public Crow(String name) {
-        super(name);
-    }
+
 
     @Override
     public void eat(String food) {
 
-
+        this.setLastFoodEaten("Berry");
 
     }
 

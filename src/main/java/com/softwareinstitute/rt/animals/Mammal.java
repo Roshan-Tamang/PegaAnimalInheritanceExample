@@ -1,9 +1,7 @@
 package com.softwareinstitute.rt.animals;
 
 public abstract class Mammal extends Animal {
-    public Mammal(String name) {
-        super(name);
-    }
+
 
     //Variable
 

@@ -3,21 +3,11 @@ package com.softwareinstitute.rt.animals;
 
 public abstract class Animal {
 
-    //Variable
     private String name;
     private String lastFoodEaten;
     private String noOfLimbs;
     private int energyLevel = 100;
 
-
-    //Constructor
-
-    public Animal(String name){
-        this.name = name;
-    }
-
-
-    //Methods
 
     public abstract void eat(String food);
 
@@ -67,4 +57,16 @@ public abstract class Animal {
     public void setEnergyLevel(int energyLevel) {
         this.energyLevel = energyLevel;
     }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", lastFoodEaten='" + lastFoodEaten + '\'' +
+                ", noOfLimbs='" + noOfLimbs + '\'' +
+                ", energyLevel=" + energyLevel +
+                '}';
+    }
+
+
 }

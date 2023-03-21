@@ -5,16 +5,6 @@ import com.softwareinstitute.rt.interfaces.Flying;
 public class Bat extends Mammal implements Flying {
 
 
-    //Variable
-
-
-    //Constructor
-    public Bat(String name) {
-        super(name);
-    }
-
-    //Methods
-
 
     @Override
     public void eat(String food) {
@@ -25,28 +15,32 @@ public class Bat extends Mammal implements Flying {
 
     @Override
     public void move() {
-
+        takeOff();
+        flight();
+        landing();
     }
 
     @Override
     public String communicate() {
-        String batNoise = "Chirp";
 
-        return batNoise;
+        return "Chirp";
     }
 
     @Override
     public void takeOff() {
+        // To be implemented
 
     }
 
     @Override
     public void flight() {
+        // To be implemented
 
     }
 
     @Override
     public void landing() {
+        // To be implemented
 
     }
 }

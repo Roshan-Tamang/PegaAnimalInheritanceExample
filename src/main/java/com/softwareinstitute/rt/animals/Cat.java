@@ -3,17 +3,6 @@ package com.softwareinstitute.rt.animals;
 
 public class Cat extends Mammal{
 
-    //Variable
-
-
-    //Constructor
-    public Cat(String name){
-        super(name);
-    }
-
-
-    //Methods
-
 
     @Override
     public void eat(String food) {
@@ -34,6 +23,8 @@ public class Cat extends Mammal{
         return catNoise;
 
     }
+
+
 
 
 }
