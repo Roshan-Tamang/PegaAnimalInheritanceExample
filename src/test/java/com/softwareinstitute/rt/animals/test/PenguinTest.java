@@ -1,6 +1,5 @@
 package com.softwareinstitute.rt.animals.test;
 
-import com.softwareinstitute.rt.animals.Crow;
 import com.softwareinstitute.rt.animals.Penguin;
 import org.junit.jupiter.api.Test;
 
@@ -10,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 public class PenguinTest {
 
     @Test
-    public void penguin_communicate_test() {
+     void testing_penguin_communicate() {
 
         Penguin penguin = new Penguin();
 
@@ -19,7 +18,7 @@ public class PenguinTest {
     }
 
     @Test
-    public void penguin_eat_test(){
+     void testing_penguin_eat(){
 
         Penguin penguin = new Penguin();
         penguin.eat("Fish");
@@ -29,5 +28,12 @@ public class PenguinTest {
     }
 
 
+    void testing_animal_snore(){
+
+        Penguin penguin = new Penguin();
+
+        assertEquals("Snore",penguin.sleep(),"The text should match");
+        
+    }
 
 }

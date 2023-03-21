@@ -7,3 +7,4 @@ com/softwareinstitute/rt/animals/Mammal.class
 com/softwareinstitute/rt/animals/Bird.class
 com/softwareinstitute/rt/zoo/Main.class
 com/softwareinstitute/rt/animals/Crow.class
+com/softwareinstitute/rt/exceptions/InsufficientEnergy.class

@@ -16,7 +16,7 @@ public abstract class Mammal extends Animal {
     public String reproduce(Animal parentAnimal) {
 
         String newAnimal = "A live-birth of animal: ";
-        return newAnimal+parentAnimal.getClass();
+        return newAnimal+parentAnimal.getClass().toString().substring(39);
 
     }
 

@@ -1,6 +1,8 @@
 package com.softwareinstitute.rt.animals;
 
 
+import com.softwareinstitute.rt.exceptions.InsufficientEnergy;
+
 public abstract class Animal {
 
     private String name;
@@ -13,7 +15,7 @@ public abstract class Animal {
 
     public abstract String reproduce(Animal parentAnimal);
 
-    public abstract void move();
+    public abstract void move() throws InsufficientEnergy;
 
     public abstract String communicate();
 

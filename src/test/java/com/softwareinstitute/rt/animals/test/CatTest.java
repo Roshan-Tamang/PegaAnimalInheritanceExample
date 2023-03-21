@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 public class CatTest {
 
     @Test
-    public void cat_communicate_test() {
+    public void testing_cat_communicate() {
 
         Cat cat = new Cat();
 
@@ -19,7 +19,7 @@ public class CatTest {
     }
 
     @Test
-    public void cat_eat_test(){
+    public void testing_cat_eat(){
 
         Cat cat = new Cat();
         cat.eat("Cat food");
@@ -28,5 +28,16 @@ public class CatTest {
 
     }
 
+    @Test
+    public void testing_cat_reproduce(){
+
+        Cat cat = new Cat();
+        Cat cat1 = new Cat();
+
+        assertEquals("A live-birth of animal: Cat",cat.reproduce(cat1),"The message is not matching");
+
+
+
+    }
 
 }

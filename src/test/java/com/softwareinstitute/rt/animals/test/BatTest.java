@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 public class BatTest {
 
     @Test
-    public void bat_communicate_test() {
+     void testing_bat_communicate() {
 
         Bat bat = new Bat();
 
@@ -18,7 +18,7 @@ public class BatTest {
     }
 
     @Test
-    public void bat_eat_test(){
+     void testing_bat_eat(){
 
         Bat bat = new Bat();
         bat.eat("Berry");
