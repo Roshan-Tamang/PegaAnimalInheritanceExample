@@ -30,7 +30,7 @@ public abstract class Animal {
     public abstract String communicate();
 
     public String sleep() {
-        String sleepNoise = "Snores";
+        String sleepNoise = "Snore";
 
         return sleepNoise;
 
@@ -42,7 +42,7 @@ public abstract class Animal {
 
     public String excrete() {
 
-        return "feces";
+        return "Feces";
     }
 
 
