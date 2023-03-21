@@ -7,13 +7,11 @@ public abstract class Animal {
 
     private String name;
     private String lastFoodEaten;
-    private int energyLevel = 100;
 
     public abstract void eat(String food);
 
 //    public abstract Animal reproduce(Animal parentAnimal);
 
-    public abstract void move() throws InsufficientEnergy;
 
     public abstract String communicate();
 
