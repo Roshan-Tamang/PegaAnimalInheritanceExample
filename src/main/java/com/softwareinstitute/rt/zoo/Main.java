@@ -1,9 +1,11 @@
 package com.softwareinstitute.rt.zoo;
 
 import com.softwareinstitute.rt.animals.*;
+import com.softwareinstitute.rt.exceptions.InsufficientEnergy;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
@@ -18,10 +20,9 @@ public class Main {
 
         checkAnimals();
 
-
     }
 
-    private static void createZoo() {
+    public static void createZoo() {
 
         Cat tabby = new Cat();
         tabby.setName("Tabby");
@@ -57,14 +58,50 @@ public class Main {
 
     }
 
-    private static void checkAnimals() {
+    public static void checkAnimals() {
 
         System.out.println("The zoo contains:");
-        for (Animal i:
-             animalList) {
+        for (Animal i :
+                animalList) {
             System.out.println(i.getClass().toString().substring(39) + " " + i.toString());
         }
 
-
     }
+
+
+
+
+
+
+
+/*    public static void moveAnimal() {
+
+        Animal animal;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Select which animal will move: ");
+        for (Animal i :
+                animalList) {
+            System.out.println(i.getClass().toString().substring(39) + " " + i.toString());
+        }
+
+        String userChoice = sc.nextLine();
+
+        for (Animal i :
+                animalList) {
+            if (i.getName().equals(userChoice)) {
+                animal = i;
+                try {
+                    i.move();
+                } catch (InsufficientEnergy e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }
+
+        animal.move();
+
+    }*/
+
+
 }

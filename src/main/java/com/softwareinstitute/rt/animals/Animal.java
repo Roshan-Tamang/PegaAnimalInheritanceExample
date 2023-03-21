@@ -11,7 +11,7 @@ public abstract class Animal {
 
     public abstract void eat(String food);
 
-    public abstract String reproduce(Animal parentAnimal);
+    public abstract Animal reproduce(Animal parentAnimal);
 
     public abstract void move() throws InsufficientEnergy;
 

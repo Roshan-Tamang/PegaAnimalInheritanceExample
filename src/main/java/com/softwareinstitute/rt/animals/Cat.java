@@ -26,5 +26,17 @@ public class Cat extends Mammal{
 
 
 
+    @Override
+    public Animal reproduce(Animal parentAnimal) {
+
+        Cat cat = new Cat();
+
+        return cat;
+
+    }
+
+
+
+
 
 }
