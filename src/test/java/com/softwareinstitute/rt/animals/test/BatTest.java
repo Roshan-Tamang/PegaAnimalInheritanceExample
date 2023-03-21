@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
-public class BatTest {
+class BatTest {
 
     @Test
-     void testing_bat_communicate() {
+    void testing_bat_communicate() {
 
         Bat bat = new Bat();
 
@@ -18,15 +18,14 @@ public class BatTest {
     }
 
     @Test
-     void testing_bat_eat(){
+    void testing_bat_eat() {
 
         Bat bat = new Bat();
         bat.eat("Berry");
 
-        assertNotEquals("Cat food",bat.getLastFoodEaten(),"The food should not match");
+        assertNotEquals("Cat food", bat.getLastFoodEaten(), "The food should not match");
 
     }
-
 
 
 }

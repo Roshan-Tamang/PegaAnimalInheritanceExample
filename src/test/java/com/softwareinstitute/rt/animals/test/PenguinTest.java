@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
-public class PenguinTest {
+class PenguinTest {
 
     @Test
-     void testing_penguin_communicate() {
+    void testing_penguin_communicate() {
 
         Penguin penguin = new Penguin();
 
@@ -18,22 +18,22 @@ public class PenguinTest {
     }
 
     @Test
-     void testing_penguin_eat(){
+    void testing_penguin_eat() {
 
         Penguin penguin = new Penguin();
         penguin.eat("Fish");
 
-        assertNotEquals("Cat food",penguin.getLastFoodEaten(),"The food should not match");
+        assertNotEquals("Cat food", penguin.getLastFoodEaten(), "The food should not match");
 
     }
 
-
-    void testing_animal_snore(){
+    @Test
+    void testing_animal_snore() {
 
         Penguin penguin = new Penguin();
 
-        assertEquals("Snore",penguin.sleep(),"The text should match");
-        
+        assertEquals("Snore", penguin.sleep(), "The text should match");
+
     }
 
 }

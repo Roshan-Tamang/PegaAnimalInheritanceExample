@@ -7,9 +7,7 @@ public abstract class Animal {
 
     private String name;
     private String lastFoodEaten;
-    private String noOfLimbs;
     private int energyLevel = 100;
-
 
     public abstract void eat(String food);
 
@@ -44,13 +42,6 @@ public abstract class Animal {
         this.lastFoodEaten = lastFoodEaten;
     }
 
-    public String getNoOfLimbs() {
-        return noOfLimbs;
-    }
-
-    public void setNoOfLimbs(String noOfLimbs) {
-        this.noOfLimbs = noOfLimbs;
-    }
 
     public int getEnergyLevel() {
         return energyLevel;
@@ -65,10 +56,7 @@ public abstract class Animal {
         return "Animal{" +
                 "name='" + name + '\'' +
                 ", lastFoodEaten='" + lastFoodEaten + '\'' +
-                ", noOfLimbs='" + noOfLimbs + '\'' +
                 ", energyLevel=" + energyLevel +
                 '}';
     }
-
-
 }
