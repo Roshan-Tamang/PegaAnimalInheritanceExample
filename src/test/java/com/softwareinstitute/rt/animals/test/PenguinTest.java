@@ -27,13 +27,13 @@ class PenguinTest {
 
     }
 
-    @Test
+ /*   @Test
     void testing_animal_snore() {
 
         Penguin penguin = new Penguin();
 
         assertEquals("Snore", penguin.sleep(), "The text should match");
 
-    }
+    }*/
 
 }

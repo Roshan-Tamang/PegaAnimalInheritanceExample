@@ -14,11 +14,16 @@ public class Bat extends Mammal implements Flying {
     }
 
     @Override
+    public Animal reproduce(Animal parentAnimal) {
+        return null;
+    }
+
+  /*  @Override
     public void move() {
         takeOff();
         flight();
         landing();
-    }
+    }*/
 
     @Override
     public String communicate() {

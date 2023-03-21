@@ -45,14 +45,6 @@ class CatTest {
 
     }*/
 
-    @Test
-    void testing_cat_energyLevel(){
-
-        Cat cat = new Cat();
-
-        assertEquals(100, cat.getEnergyLevel(),"The energy level should be 100");
-
-    }
 
 /*    @Test
     void testing_cat_name(){

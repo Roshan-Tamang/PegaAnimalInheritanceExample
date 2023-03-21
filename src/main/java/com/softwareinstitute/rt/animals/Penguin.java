@@ -8,9 +8,8 @@ public class Penguin extends Bird {
     }
 
     @Override
-    public void move() {
-
-
+    public Animal reproduce(Animal parentAnimal) {
+        return null;
     }
 
     @Override

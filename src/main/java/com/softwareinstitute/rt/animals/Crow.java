@@ -15,6 +15,11 @@ public class Crow extends Bird implements Flying {
     }
 
     @Override
+    public Animal reproduce(Animal parentAnimal) {
+        return null;
+    }
+
+   /* @Override
     public void move() {
 
         takeOff();
@@ -22,7 +27,7 @@ public class Crow extends Bird implements Flying {
         landing();
 
 
-    }
+    }*/
 
     @Override
     public String communicate() {
@@ -34,22 +39,17 @@ public class Crow extends Bird implements Flying {
     @Override
     public void takeOff() {
 
-        setEnergyLevel(getEnergyLevel()-5);
-
-
     }
 
     @Override
     public void flight() {
-
-        setEnergyLevel(getEnergyLevel()-10);
 
     }
 
     @Override
     public void landing() {
 
-        setEnergyLevel(getEnergyLevel()-1);
-
     }
+
+//z
 }

@@ -7,10 +7,14 @@ public abstract class Animal {
 
     private String name;
     private String lastFoodEaten;
+    private boolean alive = true;
+
 
     public abstract void eat(String food);
 
-//    public abstract Animal reproduce(Animal parentAnimal);
+     public abstract Animal reproduce(Animal parentAnimal);
+
+    // public abstract void breathe();
 
 
     public abstract String communicate();
@@ -20,6 +24,15 @@ public abstract class Animal {
 
         return sleepNoise;
 
+    }
+
+    public void die(){
+        alive = false;
+    }
+
+    public String excrete(){
+
+        return "excrete material";
     }
 
 
@@ -39,5 +52,11 @@ public abstract class Animal {
         this.lastFoodEaten = lastFoodEaten;
     }
 
-    
+    public boolean isAlive() {
+        return alive;
+    }
+
+    public void setAlive(boolean alive) {
+        this.alive = alive;
+    }
 }
