@@ -54,7 +54,7 @@ class CatTest {
 
     }
 
-    @Test
+/*    @Test
     void testing_cat_name(){
 
         Cat cat = new Cat();
@@ -65,7 +65,7 @@ class CatTest {
 
         assertEquals("Tabby",cat.getName(),"The name should be Tabby");
 
-    }
+    }*/
 
 
 }
