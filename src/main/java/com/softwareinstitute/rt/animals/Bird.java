@@ -1,15 +1,24 @@
 package com.softwareinstitute.rt.animals;
 
+import com.softwareinstitute.rt.exceptions.IncorrectGas;
+
 public abstract class Bird extends Animal {
 
+    public Bird(String fatherName, String motherName, int age) {
+        super(fatherName, motherName, age);
+    }
 
-   /* @Override
-    public Animal reproduce(Animal parentAnimal) {
+    @Override
+    public String breathe(String oxygen) throws IncorrectGas {
 
-        String newAnimal = "An egg is laid: ";
-        return newAnimal+parentAnimal.getClass().toString().substring(39);
+        if (!oxygen.equals("Oxygen")) {
+            throw new IncorrectGas("Wrong gas");
+        }
 
-    }*/
+        return "Breathes";
+
+    }
+
 
 
 }

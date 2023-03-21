@@ -1,38 +1,48 @@
 package com.softwareinstitute.rt.animals;
 
 
-import com.softwareinstitute.rt.exceptions.InsufficientEnergy;
+import com.softwareinstitute.rt.exceptions.IncorrectGas;
+import com.softwareinstitute.rt.exceptions.IncorrectParentAnimal;
 
 public abstract class Animal {
 
     private String name;
+    private final String fatherName;
+    private final String motherName;
+    private int age;
     private String lastFoodEaten;
     private boolean alive = true;
+
+    public Animal(String fatherName, String motherName, int age) {
+        this.fatherName = fatherName;
+        this.motherName = motherName;
+        this.age = age;
+    }
 
 
     public abstract void eat(String food);
 
-     public abstract Animal reproduce(Animal parentAnimal);
+    public abstract Animal reproduce(Animal parentAnimal) throws IncorrectParentAnimal;
 
-    // public abstract void breathe();
+    public abstract String breathe(String oxygen) throws IncorrectGas;
 
 
     public abstract String communicate();
 
-    public String sleep(){
+    public String sleep() {
         String sleepNoise = "Snores";
 
         return sleepNoise;
 
     }
 
-    public void die(){
+    public void die() {
         alive = false;
     }
 
-    public String excrete(){
+    public String excrete() {
 
-        return "excrete material";
+        return "feces";
     }
 
 
@@ -56,7 +66,19 @@ public abstract class Animal {
         return alive;
     }
 
-    public void setAlive(boolean alive) {
-        this.alive = alive;
+    public String getFatherName() {
+        return fatherName;
+    }
+
+    public String getMotherName() {
+        return motherName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }

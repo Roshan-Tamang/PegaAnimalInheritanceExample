@@ -12,7 +12,7 @@ class CrowTest {
     @Test
      void testing_crow_communicate() {
 
-        Crow crow = new Crow();
+        Crow crow = new Crow("Rich","Mary",2);
 
         assertEquals("Caw", crow.communicate(), "Incorrect Communication");
 
@@ -21,22 +21,12 @@ class CrowTest {
     @Test
      void testing_crow_eat() {
 
-        Crow crow = new Crow();
+        Crow crow = new Crow("Rich","Mary",2);
         crow.eat("Berry");
 
         assertNotEquals("Tuna", crow.getLastFoodEaten(), "The food should not match");
 
     }
 
-  /*  @Test
-     void testing_bird_reproduce() {
-
-        Crow crow = new Crow();
-
-        Crow crow1 = new Crow();
-
-        assertEquals("An egg is laid: Crow", crow.reproduce(crow1), "The food should not match");
-
-    }*/
 
 }
