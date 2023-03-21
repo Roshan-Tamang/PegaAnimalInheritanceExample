@@ -17,7 +17,6 @@ public abstract class Animal {
 
     public String sleep(){
         String sleepNoise = "Snores";
-        energyLevel = 100;
 
         return sleepNoise;
 
@@ -40,21 +39,5 @@ public abstract class Animal {
         this.lastFoodEaten = lastFoodEaten;
     }
 
-
-    public int getEnergyLevel() {
-        return energyLevel;
-    }
-
-    public void setEnergyLevel(int energyLevel) {
-        this.energyLevel = energyLevel;
-    }
-
-    @Override
-    public String toString() {
-        return "Animal{" +
-                "name='" + name + '\'' +
-                ", lastFoodEaten='" + lastFoodEaten + '\'' +
-                ", energyLevel=" + energyLevel +
-                '}';
-    }
+    
 }
